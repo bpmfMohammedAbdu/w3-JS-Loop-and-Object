@@ -43,4 +43,21 @@ function sumofthenext10(num3){
     return sumnum;
 }
 console.log(sumofthenext10(7));
+//* Question 4
+console.log("Question 4");
+// ● Write a function that takes an array as an argument and prints every element of the array on the
+// console.
+// ○ Test case: given the array a = [1, "Hello", 8, 44], output should look like this:
+// 1
+// Hello
+// 8
+// 44
+function everyelementofthearray(arr1){
+    for(i=0;i<=arr1.length;i++){
+        // return arr1[i];
+        console.log(arr1[i]);
+    }
+}
+console.log(next5num([1, "Hello", 8, 44]));
+next5num([1, "Hello", 8, 44]);
 
