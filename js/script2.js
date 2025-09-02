@@ -72,5 +72,23 @@ function totalnumberofelements(arr2){
 }
 // console.log(totalnumberofelements([1, "Hello", 8, 44]));
 console.log(totalnumberofelements(["world", 13]));
-
+//* Question 6
+console.log("Question 6");
+// ● Write a function that takes an array of numbers as a parameter and logs in the console the sum of
+// all the numbers in the array.
+// ○ Test case 1: If you give this array, [5, 6, 99, 8, 76, 4, 68, 44], to the function, output
+// should be: 310 because 5 + 6 + 99 + 8 + 76 + 4 + 68 + 44
+// ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
+// 3 + 0
+function sumofarry(arr3){
+    let sumArray = 0;
+    for(i = 0; i < arr3.length; i++){
+     sumArray = sumArray + arr3[i];
+     
+    }
+    return sumArray;
+    
+}
+console.log(sumofarry([5, 6, 99, 8, 76, 4, 68, 44]));
+console.log(sumofarry([3, 0]));
 
