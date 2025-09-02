@@ -92,3 +92,51 @@ function sumofarry(arr3){
 console.log(sumofarry([5, 6, 99, 8, 76, 4, 68, 44]));
 console.log(sumofarry([3, 0]));
 
+//* Question 7
+console.log("Question 7");
+// ● Write a function that takes an array of all numbers as a parameter, subtracts the total sum of all
+// odd numbers of the array from the total sum of all even numbers and logs the result in the
+// console.
+// ○ Test case: If you give these array, [5, 6, 99, 8, 76, 4, 68, 44], to the function, output
+// should be: 102
+// ■ Sum of odd numbers: 5 + 99 = 104
+// ■ Sum of even numbers: 6 + 8 + 76 + 4 + 68 + 44 = 206
+// ■ Difference between total even and total odd numbers: 206 - 104 = 102
+function differenceBnEandO(arr4){
+    let sumOfEven=0;
+    let sumOfOdd=0;
+    for(i = 0; i < arr4.length; i++){
+        if(arr4[i] % 2 == 0){
+            sumOfEven = sumOfEven + arr4[i];
+        }
+        else{
+            sumOfOdd = sumOfOdd + arr4[i];
+        }
+        
+    }
+    return sumOfEven - sumOfOdd;
+}
+console.log(differenceBnEandO([5, 6, 99, 8, 76, 4, 68, 44]));
+//* Question 8
+console.log("Question 8");
+// ● Write a function that takes an array as a parameter and logs in the console the elements that have
+// even indexes only. Notice: this question is not asking you to log elements with even value, but
+// elements that are located on even indexes)
+// ○ Test case 1: If you give this array to the function [5, 6, 99, 8, 76, 4, 68, 44], toutput
+// should be:
+// 5
+// 99
+// 76
+// 68
+// ○ Test case 2: If you give this array to the function [11, “Sam”, 3, 7, “car”], output should
+// be:
+// 11
+// 3
+// car
+function arrayEvenIndexVal(arr5){
+    for(i = 0; i < arr5.length; i += 2){
+        console.log(arr5[i]);
+    }
+}
+arrayEvenIndexVal([5, 6, 99, 8, 76, 4, 68, 44]); 
+arrayEvenIndexVal([11, "Sam", 3, 7, "car"]);
