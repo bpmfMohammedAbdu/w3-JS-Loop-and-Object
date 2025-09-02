@@ -60,4 +60,17 @@ function everyelementofthearray(arr1){
 }
 console.log(next5num([1, "Hello", 8, 44]));
 next5num([1, "Hello", 8, 44]);
+//* Question 5
+console.log("Question 5");
+// ● Write a function that takes an array as an argument and prints the total number of elements
+// found in the array. Hint: use a property of the Array object to solve this question.
+// ○ Test case 1: Given the array a = [1, "Hello", 8, 44], output should be: 4
+// ○ Test case 2: Given the array a = ["world", 13], output should be: 2
+function totalnumberofelements(arr2){
+    // console.log(arr2.length);
+    return arr2.length;
+}
+// console.log(totalnumberofelements([1, "Hello", 8, 44]));
+console.log(totalnumberofelements(["world", 13]));
+
 
