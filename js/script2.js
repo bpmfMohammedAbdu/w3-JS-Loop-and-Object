@@ -208,3 +208,18 @@ console.log(evangadiClass.lengthOfCourse);
 //* Question 11
 evangadiClass.topicsCovered.push("Bootstrap");
 console.log(evangadiClass.topicsCovered);
+
+//* Question 13
+console.log("Question 13");
+// ● Write a function that takes the "evangadiClass" object as an argument and calculates the average
+// age of the class. Print the result on the console
+
+function calculatesAverage(evangadiClass){
+    let sumage = 0;
+    for(i = 0; i < evangadiClass.students.length; i++){
+        sumage = sumage + evangadiClass.students[i].age;
+    }
+    averageAge = sumage / evangadiClass.students.length;
+    return averageAge;
+}
+console.log(calculatesAverage(evangadiClass));
