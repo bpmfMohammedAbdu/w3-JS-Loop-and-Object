@@ -140,3 +140,20 @@ function arrayEvenIndexVal(arr5){
 }
 arrayEvenIndexVal([5, 6, 99, 8, 76, 4, 68, 44]); 
 arrayEvenIndexVal([11, "Sam", 3, 7, "car"]);
+//* Question 9
+console.log("Question 8");
+// Write a function that takes the sampleArray as a parameter, removes the last element from the array,
+// adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
+//let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
+function removeLastAndAdd32(arr6) {
+    if(!Array.isArray(arr6)){
+        return "input must be array"
+    }
+
+    arr6.pop();
+    arr6.push("32");
+    return arr6;
+}
+console.log(removeLastAndAdd32(([5, 6, 99, 8, 76, 4, 68, 44])));
+console.log(removeLastAndAdd32("3"));
+
