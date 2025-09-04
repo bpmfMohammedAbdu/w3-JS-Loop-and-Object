@@ -223,3 +223,28 @@ function calculatesAverage(evangadiClass){
     return averageAge;
 }
 console.log(calculatesAverage(evangadiClass));
+
+//* Question 14
+console.log("Question 14");
+// ● Write a function that takes the "evangadiClass" object as an argument and calculates the
+// percentage of male students in the class. Print the result on the console
+// function persentageOfMF(evangadiClass){
+function calculateMalePercentage(evangadiClass) {
+  var maleCount = 0;
+  var totalStudents = evangadiClass.students.length;
+  for (var i = 0; i < totalStudents; i++) {
+    if (evangadiClass.students[i].sex === "M") {
+      maleCount++;
+    }
+  }
+  var malePercentage = (maleCount * 100) / totalStudents;
+  var femalePercentage = 100 - malePercentage;
+  var result =
+    "Percentage of male students: " +
+    malePercentage +
+    "%, Percentage of female students: " +
+    femalePercentage +
+    "%";
+  return result;
+}
+console.log(calculateMalePercentage(evangadiClass));
