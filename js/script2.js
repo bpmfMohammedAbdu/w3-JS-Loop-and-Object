@@ -141,7 +141,7 @@ function arrayEvenIndexVal(arr5){
 arrayEvenIndexVal([5, 6, 99, 8, 76, 4, 68, 44]); 
 arrayEvenIndexVal([11, "Sam", 3, 7, "car"]);
 //* Question 9
-console.log("Question 8");
+console.log("Question 9");
 // Write a function that takes the sampleArray as a parameter, removes the last element from the array,
 // adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
 //let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
@@ -156,4 +156,19 @@ function removeLastAndAdd32(arr6) {
 }
 console.log(removeLastAndAdd32(([5, 6, 99, 8, 76, 4, 68, 44])));
 console.log(removeLastAndAdd32("3"));
+//* Question 10
+console.log("Question 10");
+// ● Write a function that takes the sampleArray as an argument, sorts the array in ascending order
+// and prints the sorted array on the console
+// Use the sort method. Make sure you understand just using the sort() method alphabetically.
+// You should use this sorting syntax - sort(function(a, b){return a-b});
+function sortArrayAscending(arr7) {
+    if (!Array.isArray(arr7)) {
+        return "input must be array";
+    }
+    return arr7.sort(function(a,b){
+        return a-b;
+    })
+}
+console.log(sortArrayAscending([5, 6, 99, 8, 76, 4, 68, 44]));
 
