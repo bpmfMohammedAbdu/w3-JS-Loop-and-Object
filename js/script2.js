@@ -1,10 +1,10 @@
 //* Question 1
 console.log("Question 1");
 // Write a function that prints the first 10 integers on the console starting from the number 1 using
-function firstint(){
-    for(i=0;i<=10;i++){
-        console.log(i);
-    }
+function firstint() {
+  for (i = 0; i <= 10; i++) {
+    console.log(i);
+  }
 }
 console.log(firstint());
 firstint();
@@ -20,10 +20,9 @@ console.log("Question 2");
 // 11
 // 12
 function next5num(num2) {
-    for(i=num2;i<=num2+5;i++){
-        console.log(i) ;
-    }
-    
+  for (i = num2; i <= num2 + 5; i++) {
+    console.log(i);
+  }
 }
 console.log(next5num(7));
 next5num(7);
@@ -34,13 +33,12 @@ console.log("Question 3");
 // given number.
 // ○ Test case: If you give 7 to the function, output should be: 125 - because (8 + 9 + 10+
 // 11+ 12+ 13+ 14+ 15+ 16+ 17 = 125)
-function sumofthenext10(num3){
-    sumnum=0;
-    for(i=num3+1;i<=num3+10;i++){
-         sumnum = sumnum + i;
-        
-    }
-    return sumnum;
+function sumofthenext10(num3) {
+  sumnum = 0;
+  for (i = num3 + 1; i <= num3 + 10; i++) {
+    sumnum = sumnum + i;
+  }
+  return sumnum;
 }
 console.log(sumofthenext10(7));
 //* Question 4
@@ -52,11 +50,11 @@ console.log("Question 4");
 // Hello
 // 8
 // 44
-function everyelementofthearray(arr1){
-    for(i=0;i<=arr1.length;i++){
-        // return arr1[i];
-        console.log(arr1[i]);
-    }
+function everyelementofthearray(arr1) {
+  for (i = 0; i <= arr1.length; i++) {
+    // return arr1[i];
+    console.log(arr1[i]);
+  }
 }
 console.log(next5num([1, "Hello", 8, 44]));
 next5num([1, "Hello", 8, 44]);
@@ -66,9 +64,9 @@ console.log("Question 5");
 // found in the array. Hint: use a property of the Array object to solve this question.
 // ○ Test case 1: Given the array a = [1, "Hello", 8, 44], output should be: 4
 // ○ Test case 2: Given the array a = ["world", 13], output should be: 2
-function totalnumberofelements(arr2){
-    // console.log(arr2.length);
-    return arr2.length;
+function totalnumberofelements(arr2) {
+  // console.log(arr2.length);
+  return arr2.length;
 }
 // console.log(totalnumberofelements([1, "Hello", 8, 44]));
 console.log(totalnumberofelements(["world", 13]));
@@ -80,14 +78,12 @@ console.log("Question 6");
 // should be: 310 because 5 + 6 + 99 + 8 + 76 + 4 + 68 + 44
 // ○ Test case 2: If you give this array, [3, 0], to the function, output should be: 3 because
 // 3 + 0
-function sumofarry(arr3){
-    let sumArray = 0;
-    for(i = 0; i < arr3.length; i++){
-     sumArray = sumArray + arr3[i];
-     
-    }
-    return sumArray;
-    
+function sumofarry(arr3) {
+  let sumArray = 0;
+  for (i = 0; i < arr3.length; i++) {
+    sumArray = sumArray + arr3[i];
+  }
+  return sumArray;
 }
 console.log(sumofarry([5, 6, 99, 8, 76, 4, 68, 44]));
 console.log(sumofarry([3, 0]));
@@ -102,19 +98,17 @@ console.log("Question 7");
 // ■ Sum of odd numbers: 5 + 99 = 104
 // ■ Sum of even numbers: 6 + 8 + 76 + 4 + 68 + 44 = 206
 // ■ Difference between total even and total odd numbers: 206 - 104 = 102
-function differenceBnEandO(arr4){
-    let sumOfEven=0;
-    let sumOfOdd=0;
-    for(i = 0; i < arr4.length; i++){
-        if(arr4[i] % 2 == 0){
-            sumOfEven = sumOfEven + arr4[i];
-        }
-        else{
-            sumOfOdd = sumOfOdd + arr4[i];
-        }
-        
+function differenceBnEandO(arr4) {
+  let sumOfEven = 0;
+  let sumOfOdd = 0;
+  for (i = 0; i < arr4.length; i++) {
+    if (arr4[i] % 2 == 0) {
+      sumOfEven = sumOfEven + arr4[i];
+    } else {
+      sumOfOdd = sumOfOdd + arr4[i];
     }
-    return sumOfEven - sumOfOdd;
+  }
+  return sumOfEven - sumOfOdd;
 }
 console.log(differenceBnEandO([5, 6, 99, 8, 76, 4, 68, 44]));
 //* Question 8
@@ -133,12 +127,12 @@ console.log("Question 8");
 // 11
 // 3
 // car
-function arrayEvenIndexVal(arr5){
-    for(i = 0; i < arr5.length; i += 2){
-        console.log(arr5[i]);
-    }
+function arrayEvenIndexVal(arr5) {
+  for (i = 0; i < arr5.length; i += 2) {
+    console.log(arr5[i]);
+  }
 }
-arrayEvenIndexVal([5, 6, 99, 8, 76, 4, 68, 44]); 
+arrayEvenIndexVal([5, 6, 99, 8, 76, 4, 68, 44]);
 arrayEvenIndexVal([11, "Sam", 3, 7, "car"]);
 //* Question 9
 console.log("Question 9");
@@ -146,15 +140,15 @@ console.log("Question 9");
 // adds a new value of "32" to the array and prints the new array on the console. Hint: use an array method
 //let sampleArray = [5, 6, 99, 8, 76, 4, 68, 44];
 function removeLastAndAdd32(arr6) {
-    if(!Array.isArray(arr6)){
-        return "input must be array"
-    }
+  if (!Array.isArray(arr6)) {
+    return "input must be array";
+  }
 
-    arr6.pop();
-    arr6.push("32");
-    return arr6;
+  arr6.pop();
+  arr6.push("32");
+  return arr6;
 }
-console.log(removeLastAndAdd32(([5, 6, 99, 8, 76, 4, 68, 44])));
+console.log(removeLastAndAdd32([5, 6, 99, 8, 76, 4, 68, 44]));
 console.log(removeLastAndAdd32("3"));
 //* Question 10
 console.log("Question 10");
@@ -163,12 +157,54 @@ console.log("Question 10");
 // Use the sort method. Make sure you understand just using the sort() method alphabetically.
 // You should use this sorting syntax - sort(function(a, b){return a-b});
 function sortArrayAscending(arr7) {
-    if (!Array.isArray(arr7)) {
-        return "input must be array";
-    }
-    return arr7.sort(function(a,b){
-        return a-b;
-    })
+  if (!Array.isArray(arr7)) {
+    return "input must be array";
+  }
+  return arr7.sort(function (a, b) {
+    return a - b;
+  });
 }
 console.log(sortArrayAscending([5, 6, 99, 8, 76, 4, 68, 44]));
 
+//* Question 10 and 11
+console.log("Question 10 and 11");
+let evangadiClass = {
+  lengthOfCourse: "1 Month",
+  website: "https://www.evangadi.com/",
+  isChallenging: false,
+  topicsCovered: ["HTML", "CSS", "Media Query", "JavaScript"],
+  students: [
+    {
+      name: "Abebe",
+      age: 34,
+      sex: "M",
+    },
+    {
+      name: "Kebede",
+      age: 44,
+      sex: "M",
+    },
+    {
+      name: "Almaz",
+      age: 27,
+      sex: "F",
+    },
+    {
+      name: "Challa",
+      age: 22,
+      sex: "M",
+    },
+    {
+      name: "Chaltu",
+      age: 19,
+      sex: "F",
+    },
+  ],
+};
+//* Question 10
+evangadiClass.lengthOfCourse = "5 Month";
+// evangadiClass["lengthOfCourse"] = "6 Month";
+console.log(evangadiClass.lengthOfCourse);
+//* Question 11
+evangadiClass.topicsCovered.push("Bootstrap");
+console.log(evangadiClass.topicsCovered);
